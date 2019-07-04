@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry location="D:/iap/resin-pro-4.0.53/lib/postgresql-42.1.4.jar"/>
+	<context id="testTables">
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<commentGenerator>
+			<property name="suppressDate" value="true"/>
+		</commentGenerator>
+		<jdbcConnection driverClass="org.postgresql.Driver" connectionURL="jdbc:postgresql://localhost:5432/wfmdb" userId="imart" password="imart"></jdbcConnection>
+		<javaModelGenerator targetPackage="jp.co.c_nexco.businesscommon.entity.skf.table" targetProject="skf_storage"></javaModelGenerator>
+		<sqlMapGenerator targetPackage="jp.co.c_nexco.businesscommon.repository.skf.table" targetProject="skf_storage"></sqlMapGenerator>
+		<javaClientGenerator targetPackage="jp.co.c_nexco.businesscommon.repository.skf.table" type="XMLMAPPER" targetProject="skf_storage"></javaClientGenerator>
+		<table schema="skf" tableName="skf1010_m_shain" mapperName="Skf1010MShainRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_w_shain" mapperName="Skf1010WShainRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_soshiki" mapperName="Skf1010MSoshikiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_w_soshiki" mapperName="Skf1010WSoshikiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_bk_soshiki" mapperName="Skf1010MBkSoshikiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_in_soshiki" mapperName="Skf1010MInSoshikiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_tokyu" mapperName="Skf1010MTokyuRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_company" mapperName="Skf1010MCompanyRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_agency" mapperName="Skf1010MAgencyRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_business_area" mapperName="Skf1010MBusinessAreaRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_shataku_shain_rireki" mapperName="Skf1010MShatakuShainRirekiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_t_batch_control" mapperName="Skf1010TBatchControlRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_t_information" mapperName="Skf1010TInformationRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_m_operation_guide" mapperName="Skf1010MOperationGuideRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf1010_t_operation_log" mapperName="Skf1010TOperationLogRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2010_m_workflow" mapperName="Skf2010MWorkflowRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2010_m_workflow_level" mapperName="Skf2010MWorkflowLevelRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2010_m_application_ctgry" mapperName="Skf2010MApplicationCtgryRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2010_m_application" mapperName="Skf2010MApplicationRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2010_t_appl_history" mapperName="Skf2010TApplHistoryRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2010_t_appl_comment" mapperName="Skf2010TApplCommentRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2010_t_attached_file" mapperName="Skf2010TAttachedFileRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2020_t_nyukyo_chosho_tsuchi" mapperName="Skf2020TNyukyoChoshoTsuchiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2040_t_taikyo_report" mapperName="Skf2040TTaikyoReportRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2060_t_kariage_bukken" mapperName="Skf2060TKariageBukkenRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2060_t_kariage_bukken_File" mapperName="Skf2060TKariageBukkenFileRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2060_t_kariage_teiji" mapperName="Skf2060TKariageTeijiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2060_t_kariage_teiji_detail" mapperName="Skf2060TKariageTeijiDetailRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2060_t_kariage_teiji_file" mapperName="Skf2060TKariageTeijiFileRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2030_t_bihin_kibo_shinsei" mapperName="Skf2030TBihinKiboShinseiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2050_t_bihin_henkyaku_shinsei" mapperName="Skf2050TBihinHenkyakuShinseiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2030_t_bihin" mapperName="Skf2030TBihinRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku" mapperName="Skf3010MShatakuRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_manege" mapperName="Skf3010MShatakuManegeRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_contract" mapperName="Skf3010MShatakuContractRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_parking_contract" mapperName="Skf3010MShatakuParkingContractRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_bihin" mapperName="Skf3010MShatakuBihinRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_room" mapperName="Skf3010MShatakuRoomRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_room_bihin" mapperName="Skf3010MShatakuRoomBihinRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_parking" mapperName="Skf3010MShatakuParkingRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3010_m_shataku_parking_block" mapperName="Skf3010MShatakuParkingBlockRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3022_m_aria_hoseiritsu" mapperName="Skf3022MAriaHoseiritsuRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3022_m_menseki_hoseiritsu" mapperName="Skf3022MMensekiHoseiritsuRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3022_m_structure_hoseiritsu" mapperName="Skf3022MStructureHoseiritsuRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3022_m_aging_residual_rate" mapperName="Skf3022MAgingResidualRateRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3020_t_tenninsha_chosho_data" mapperName="Skf3020TTenninshaChoshoDataRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3021_t_nyutaikyo_yotei_data" mapperName="Skf3021TNyutaikyoYoteiDataRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3022_t_teiji_data" mapperName="Skf3022TTeijiDataRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3022_t_teiji_bihin_data" mapperName="Skf3022TTeijiBihinDataRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3022_t_shataku_yoyaku_data" mapperName="Skf3022TShatakuYoyakuDataRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_shataku_ledger" mapperName="Skf3030TShatakuLedgerRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_shataku_bihin" mapperName="Skf3030TShatakuBihinRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_shataku_mutual" mapperName="Skf3030TShatakuMutualRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_shataku_rental_rireki" mapperName="Skf3030TShatakuRentalRirekiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_shozoku_rireki" mapperName="Skf3030TShozokuRirekiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_shataku_bihin_rireki" mapperName="Skf3030TShatakuBihinRirekiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_parking_rireki" mapperName="Skf3030TParkingRirekiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_shataku_mutual_rireki" mapperName="Skf3030TShatakuMutualRirekiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3030_t_rental_pattern" mapperName="Skf3030TRentalPatternRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_t_monthly_manage_data" mapperName="Skf3050TMonthlyManageDataRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_pay_in_kind" mapperName="Skf3050MPayInKindRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_pay_in_kind_biko" mapperName="Skf3050MPayInKindBikoRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_rental_base" mapperName="Skf3050MRentalBaseRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_aging_adjust" mapperName="Skf3050MAgingAdjustRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_parking_rental" mapperName="Skf3050MParkingRentalRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_bihin_item" mapperName="Skf3050MBihinItemRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_account" mapperName="Skf3050MAccountRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3060_m_age_kasankeisu" mapperName="Skf3060MAgeKasanKeisuRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3060_t_age_kasan_sendmail" mapperName="Skf3060TAgeKasanSendmailRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3070_t_owner_info" mapperName="Skf3070TOwnerInfoRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+	</context>
+</generatorConfiguration>
