@@ -67,6 +67,7 @@
     <result column="bihin_teiji_status" jdbcType="VARCHAR" property="bihinTeijiStatus" />
     <result column="bihin_teiji_urge_date" jdbcType="VARCHAR" property="bihinTeijiUrgeDate" />
     <result column="bihin_inout_urge_date" jdbcType="VARCHAR" property="bihinInoutUrgeDate" />
+    <result column="hannyu_carryin_instruction" jdbcType="VARCHAR" property="hannyuCarryinInstruction" />
     <result column="create_complete_kbn" jdbcType="VARCHAR" property="createCompleteKbn" />
     <result column="land_create_kbn" jdbcType="VARCHAR" property="landCreateKbn" />
     <result column="parking_kanri_no_1" jdbcType="NUMERIC" property="parkingKanriNo1" />
@@ -107,11 +108,11 @@
     mutual_use_end_day, assign_company_cd, agency, affiliation1, affiliation2, assign_cd, 
     original_company_cd, pay_company_cd, shataku_teiji_status, shataku_teiji_urge_date, 
     bihin_taiyo_kbn, bihin_teiji_status, bihin_teiji_urge_date, bihin_inout_urge_date, 
-    create_complete_kbn, land_create_kbn, parking_kanri_no_1, parking_kanri_no_2, mutual_use_kbn, 
-    shataku_company_transfer_kbn, kyoekihi_company_transfer_kbn, shataku_kanri_id, jss_shataku_teiji_date, 
-    mutual_jokyo, rental_month, parking_1_rental_month, parking_2_rental_month, now_affiliation, 
-    new_affiliation, delete_flag, insert_date, insert_user_id, insert_program_id, update_date, 
-    update_user_id, update_program_id
+    hannyu_carryin_instruction, create_complete_kbn, land_create_kbn, parking_kanri_no_1, 
+    parking_kanri_no_2, mutual_use_kbn, shataku_company_transfer_kbn, kyoekihi_company_transfer_kbn, 
+    shataku_kanri_id, jss_shataku_teiji_date, mutual_jokyo, rental_month, parking_1_rental_month, 
+    parking_2_rental_month, now_affiliation, new_affiliation, delete_flag, insert_date, 
+    insert_user_id, insert_program_id, update_date, update_user_id, update_program_id
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     <!--
@@ -158,8 +159,9 @@
       original_company_cd, pay_company_cd, shataku_teiji_status, 
       shataku_teiji_urge_date, bihin_taiyo_kbn, bihin_teiji_status, 
       bihin_teiji_urge_date, bihin_inout_urge_date, 
-      create_complete_kbn, land_create_kbn, parking_kanri_no_1, 
-      parking_kanri_no_2, mutual_use_kbn, shataku_company_transfer_kbn, 
+      hannyu_carryin_instruction, create_complete_kbn, 
+      land_create_kbn, parking_kanri_no_1, parking_kanri_no_2, 
+      mutual_use_kbn, shataku_company_transfer_kbn, 
       kyoekihi_company_transfer_kbn, shataku_kanri_id, 
       jss_shataku_teiji_date, mutual_jokyo, rental_month, 
       parking_1_rental_month, parking_2_rental_month, 
@@ -188,8 +190,9 @@
       #{originalCompanyCd,jdbcType=VARCHAR}, #{payCompanyCd,jdbcType=VARCHAR}, #{shatakuTeijiStatus,jdbcType=VARCHAR}, 
       #{shatakuTeijiUrgeDate,jdbcType=VARCHAR}, #{bihinTaiyoKbn,jdbcType=VARCHAR}, #{bihinTeijiStatus,jdbcType=VARCHAR}, 
       #{bihinTeijiUrgeDate,jdbcType=VARCHAR}, #{bihinInoutUrgeDate,jdbcType=VARCHAR}, 
-      #{createCompleteKbn,jdbcType=VARCHAR}, #{landCreateKbn,jdbcType=VARCHAR}, #{parkingKanriNo1,jdbcType=NUMERIC}, 
-      #{parkingKanriNo2,jdbcType=NUMERIC}, #{mutualUseKbn,jdbcType=VARCHAR}, #{shatakuCompanyTransferKbn,jdbcType=VARCHAR}, 
+      #{hannyuCarryinInstruction,jdbcType=VARCHAR}, #{createCompleteKbn,jdbcType=VARCHAR}, 
+      #{landCreateKbn,jdbcType=VARCHAR}, #{parkingKanriNo1,jdbcType=NUMERIC}, #{parkingKanriNo2,jdbcType=NUMERIC}, 
+      #{mutualUseKbn,jdbcType=VARCHAR}, #{shatakuCompanyTransferKbn,jdbcType=VARCHAR}, 
       #{kyoekihiCompanyTransferKbn,jdbcType=VARCHAR}, #{shatakuKanriId,jdbcType=NUMERIC}, 
       #{jssShatakuTeijiDate,jdbcType=VARCHAR}, #{mutualJokyo,jdbcType=VARCHAR}, #{rentalMonth,jdbcType=NUMERIC}, 
       #{parking1RentalMonth,jdbcType=NUMERIC}, #{parking2RentalMonth,jdbcType=NUMERIC}, 
@@ -386,6 +389,9 @@
       </if>
       <if test="bihinInoutUrgeDate != null">
         bihin_inout_urge_date,
+      </if>
+      <if test="hannyuCarryinInstruction != null">
+        hannyu_carryin_instruction,
       </if>
       <if test="createCompleteKbn != null">
         create_complete_kbn,
@@ -633,6 +639,9 @@
       </if>
       <if test="bihinInoutUrgeDate != null">
         #{bihinInoutUrgeDate,jdbcType=VARCHAR},
+      </if>
+      <if test="hannyuCarryinInstruction != null">
+        #{hannyuCarryinInstruction,jdbcType=VARCHAR},
       </if>
       <if test="createCompleteKbn != null">
         #{createCompleteKbn,jdbcType=VARCHAR},
@@ -885,6 +894,9 @@
       <if test="bihinInoutUrgeDate != null">
         bihin_inout_urge_date = #{bihinInoutUrgeDate,jdbcType=VARCHAR},
       </if>
+      <if test="hannyuCarryinInstruction != null">
+        hannyu_carryin_instruction = #{hannyuCarryinInstruction,jdbcType=VARCHAR},
+      </if>
       <if test="createCompleteKbn != null">
         create_complete_kbn = #{createCompleteKbn,jdbcType=VARCHAR},
       </if>
@@ -1018,6 +1030,7 @@
       bihin_teiji_status = #{bihinTeijiStatus,jdbcType=VARCHAR},
       bihin_teiji_urge_date = #{bihinTeijiUrgeDate,jdbcType=VARCHAR},
       bihin_inout_urge_date = #{bihinInoutUrgeDate,jdbcType=VARCHAR},
+      hannyu_carryin_instruction = #{hannyuCarryinInstruction,jdbcType=VARCHAR},
       create_complete_kbn = #{createCompleteKbn,jdbcType=VARCHAR},
       land_create_kbn = #{landCreateKbn,jdbcType=VARCHAR},
       parking_kanri_no_1 = #{parkingKanriNo1,jdbcType=NUMERIC},
