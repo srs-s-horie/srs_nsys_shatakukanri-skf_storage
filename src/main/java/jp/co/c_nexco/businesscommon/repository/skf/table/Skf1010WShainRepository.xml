@@ -22,7 +22,6 @@
     <result column="birthday_year" jdbcType="NUMERIC" property="birthdayYear" />
     <result column="birthday_month" jdbcType="NUMERIC" property="birthdayMonth" />
     <result column="birthday_day" jdbcType="NUMERIC" property="birthdayDay" />
-    <result column="role_id" jdbcType="VARCHAR" property="roleId" />
     <result column="retire_flg" jdbcType="VARCHAR" property="retireFlg" />
     <result column="retire_date" jdbcType="VARCHAR" property="retireDate" />
     <result column="shain_no_change_flg" jdbcType="VARCHAR" property="shainNoChangeFlg" />
@@ -43,7 +42,7 @@
     -->
     company_cd, shain_no, name_kk, name, gender, mail_address, user_id, tokyu_cd, original_company_cd, 
     agency_cd, affiliation1_cd, affiliation2_cd, business_area_cd, birthday_year, birthday_month, 
-    birthday_day, role_id, retire_flg, retire_date, shain_no_change_flg, shain_no_change_date, 
+    birthday_day, retire_flg, retire_date, shain_no_change_flg, shain_no_change_date, 
     regist_flg, delete_flag, insert_date, insert_user_id, insert_program_id, update_date, 
     update_user_id, update_program_id
   </sql>
@@ -77,21 +76,19 @@
       user_id, tokyu_cd, original_company_cd, 
       agency_cd, affiliation1_cd, affiliation2_cd, 
       business_area_cd, birthday_year, birthday_month, 
-      birthday_day, role_id, retire_flg, 
-      retire_date, shain_no_change_flg, shain_no_change_date, 
-      regist_flg, delete_flag, insert_date, insert_user_id, 
-      insert_program_id, update_date, update_user_id, update_program_id
-      )
+      birthday_day, retire_flg, retire_date, 
+      shain_no_change_flg, shain_no_change_date, regist_flg, 
+      delete_flag, insert_date, insert_user_id, insert_program_id, 
+      update_date, update_user_id, update_program_id)
     values (#{companyCd,jdbcType=VARCHAR}, #{shainNo,jdbcType=VARCHAR}, #{nameKk,jdbcType=VARCHAR}, 
       #{name,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{mailAddress,jdbcType=VARCHAR}, 
       #{userId,jdbcType=VARCHAR}, #{tokyuCd,jdbcType=VARCHAR}, #{originalCompanyCd,jdbcType=VARCHAR}, 
       #{agencyCd,jdbcType=VARCHAR}, #{affiliation1Cd,jdbcType=VARCHAR}, #{affiliation2Cd,jdbcType=VARCHAR}, 
       #{businessAreaCd,jdbcType=VARCHAR}, #{birthdayYear,jdbcType=NUMERIC}, #{birthdayMonth,jdbcType=NUMERIC}, 
-      #{birthdayDay,jdbcType=NUMERIC}, #{roleId,jdbcType=VARCHAR}, #{retireFlg,jdbcType=VARCHAR}, 
-      #{retireDate,jdbcType=VARCHAR}, #{shainNoChangeFlg,jdbcType=VARCHAR}, #{shainNoChangeDate,jdbcType=VARCHAR}, 
-      #{registFlg,jdbcType=VARCHAR}, #{deleteFlag,jdbcType=VARCHAR}, now(), #{insertUserId,jdbcType=VARCHAR}, 
-      #{insertProgramId,jdbcType=VARCHAR}, now(), #{updateUserId,jdbcType=VARCHAR}, #{updateProgramId,jdbcType=VARCHAR}
-      )
+      #{birthdayDay,jdbcType=NUMERIC}, #{retireFlg,jdbcType=VARCHAR}, #{retireDate,jdbcType=VARCHAR}, 
+      #{shainNoChangeFlg,jdbcType=VARCHAR}, #{shainNoChangeDate,jdbcType=VARCHAR}, #{registFlg,jdbcType=VARCHAR}, 
+      #{deleteFlag,jdbcType=VARCHAR}, now(), #{insertUserId,jdbcType=VARCHAR}, #{insertProgramId,jdbcType=VARCHAR}, 
+      now(), #{updateUserId,jdbcType=VARCHAR}, #{updateProgramId,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="jp.co.c_nexco.businesscommon.entity.skf.table.Skf1010WShain">
     <!--
@@ -147,9 +144,6 @@
       </if>
       <if test="birthdayDay != null">
         birthday_day,
-      </if>
-      <if test="roleId != null">
-        role_id,
       </if>
       <if test="retireFlg != null">
         retire_flg,
@@ -232,9 +226,6 @@
       </if>
       <if test="birthdayDay != null">
         #{birthdayDay,jdbcType=NUMERIC},
-      </if>
-      <if test="roleId != null">
-        #{roleId,jdbcType=VARCHAR},
       </if>
       <if test="retireFlg != null">
         #{retireFlg,jdbcType=VARCHAR},
@@ -319,9 +310,6 @@
       <if test="birthdayDay != null">
         birthday_day = #{birthdayDay,jdbcType=NUMERIC},
       </if>
-      <if test="roleId != null">
-        role_id = #{roleId,jdbcType=VARCHAR},
-      </if>
       <if test="retireFlg != null">
         retire_flg = #{retireFlg,jdbcType=VARCHAR},
       </if>
@@ -380,7 +368,6 @@
       birthday_year = #{birthdayYear,jdbcType=NUMERIC},
       birthday_month = #{birthdayMonth,jdbcType=NUMERIC},
       birthday_day = #{birthdayDay,jdbcType=NUMERIC},
-      role_id = #{roleId,jdbcType=VARCHAR},
       retire_flg = #{retireFlg,jdbcType=VARCHAR},
       retire_date = #{retireDate,jdbcType=VARCHAR},
       shain_no_change_flg = #{shainNoChangeFlg,jdbcType=VARCHAR},
