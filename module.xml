@@ -8,10 +8,6 @@
   <description>${module.description}</description>
   <dependencies>
     <dependency>
-      <module-id>jp.co.c_nexco.fw_batch</module-id>
-      <verified-version>1.0.0</verified-version>
-    </dependency>
-    <dependency>
       <module-id>jp.co.c_nexco.skf_env</module-id>
       <verified-version>1.0.0</verified-version>
     </dependency>
