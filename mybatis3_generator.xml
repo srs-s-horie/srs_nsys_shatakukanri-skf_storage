@@ -361,5 +361,45 @@
 							enableUpdateByExample="false" selectByExampleQueryId="false">
 			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
 		</table>
+		<table schema="skf" tableName="skf2100_t_mobile_router_kibo_shinsei" mapperName="Skf2100TMobileRouterKiboShinseiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2100_t_mobile_router_henkyaku_shinsei" mapperName="Skf2100TMobileRouterHenkyakuShinseiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf3050_m_general_equipment_item" mapperName="Skf3050MGeneralEquipmentItemRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2100_m_mobile_router" mapperName="Skf2100MMobileRouterRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2100_t_router_lending_yotei_data" mapperName="Skf2100TRouterLendingYoteiDataRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2100_t_mobile_router_ledger" mapperName="Skf2100TMobileRouterLedgerRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2100_t_mobile_router_rental_rireki_meisai" mapperName="Skf2100TMobileRouterRentalRirekiMeisaiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
+		<table schema="skf" tableName="skf2100_t_mobile_router_rental_rireki" mapperName="Skf2100TMobileRouterRentalRirekiRepository" enableCountByExample="false" 
+							enableDeleteByExample="false" enableSelectByExample="false" 
+							enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="rootClass" value="jp.co.c_nexco.nfw.common.entity.base.BaseEntity"></property>
+		</table>
 	</context>
 </generatorConfiguration>
